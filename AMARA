@@ -1,0 +1,16 @@
+// Import Faker
+const faker = require('faker');
+
+// Generate fake name
+const fakeName = faker.name.firstName() + ' ' + faker.name.lastName();
+
+// Generate fake email
+const fakeEmail = faker.internet.email();
+
+// Generate fake address
+const fakeAddress = faker.address.streetAddress() + ', ' + faker.address.city() + ', ' + faker.address.country();
+
+// Print fake data
+console.log('Name:', fakeName);
+console.log('Email:', fakeEmail);
+console.log('Address:', fakeAddress);
